@@ -3,7 +3,7 @@
 function rateUpdate(){
     document.getElementById('displayRate').innerHTML = document.getElementById('rate').value;
 }
-//Validate form against 0 or negative numbers
+//Validate form against 0, negative numbers, NaN, and null
 function validateForm() {
   amountField = parseInt(document.getElementById('principal').value);
   if(amountField <= 0 || amountField.toString() == 'NaN' || amountField == '') {
