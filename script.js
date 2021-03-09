@@ -6,18 +6,18 @@ function rateUpdate(){
 //Validate form against 0, negative numbers, NaN, and null
 function validateForm() {
   amountField = parseInt(document.getElementById('principal').value);
-  if(amountField <= 0) {
-    alert('Please enter a positive number!');
-    setTimeout(function(){
-        document.getElementById('principal').focus();
-    }, 1);
-    return false
-  } else if (amountField.toString() == 'NaN' || amountField == '') {
+  if (amountField.toString() == 'NaN' || amountField == '') {
     alert('Please enter an amount!');
     setTimeout(function(){
         document.getElementById('principal').focus();
     }, 1);
-    return false 
+    return false
+  } else if (amountField <= 0) {
+    alert('Please enter a positive number!');
+    setTimeout(function(){
+        document.getElementById('principal').focus();
+    }, 1);
+    return false  
   } else {
     compute()
   }
