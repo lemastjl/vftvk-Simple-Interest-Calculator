@@ -1,8 +1,9 @@
 
-
+//Dynamic Output for number scroller
 function rateUpdate(){
     document.getElementById('displayRate').innerHTML = document.getElementById('rate').value;
 }
+//Validate form against 0 or negative numbers
 function validateForm() {
   amountField = parseInt(document.getElementById('principal').value);
   if (amountField <= 0) {
@@ -14,20 +15,20 @@ function validateForm() {
   }else{
     compute()
   }
-// Form submit function
+// Form result function
     function compute(){
-// Get HTML Elements
+// Get HTML elements
         principle = document.getElementById ('principal').value;
         years = document.getElementById ('years').value;
         rate = document.getElementById ('rate').value;
 // Calcultions
         interest = parseFloat((principle*years*rate)/100 ).toFixed(2);
         amount = (principle*Math.pow((1 +rate/100),years )).toFixed(2);
-// Find Current Year and Add Input of Years
+// Find current year and add input of years
         d = new Date();
         year = d.getFullYear();
         loanGradDate = parseInt(year) + parseInt(years);
-// Display result in result span
+// Display result in "result" span
         document.getElementById ('result').innerHTML =
         `<br /><br />If you deposit <mark>$${principle}</mark>,<br />
         at an interest rate of <mark>${rate}%</mark>.<br />
