@@ -38,7 +38,7 @@ function validateForm() {
         `<br /><br />If you deposit <mark>$${principle}</mark>,<br />
         at an interest rate of <mark>${rate}%</mark>.<br />
         You will receive an amount of <mark>$${interest}</mark>,<br />
-        in the year <mark>${loanGradDate}</mark> for a total of <mark>$${amount}</mark>.`
+        in the year <mark>${loanGradDate}</mark>. Compounded: <mark>$${compound}</mark>.`
     }
   }
  
