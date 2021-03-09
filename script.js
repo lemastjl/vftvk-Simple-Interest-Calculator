@@ -6,13 +6,13 @@ function rateUpdate(){
 //Validate form against 0 or negative numbers
 function validateForm() {
   amountField = parseInt(document.getElementById('principal').value);
-  if (amountField <= 0) {
+  if(amountField <= 0 || amountField.toString() == 'NaN' || amountField == '') {
     alert('Enter a positive number!');
     setTimeout(function(){
         document.getElementById('principal').focus();
     }, 1);
     return false
-  }else{
+  } else {
     compute()
   }
 // Form result function
