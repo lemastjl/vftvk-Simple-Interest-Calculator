@@ -29,7 +29,7 @@ function validateForm() {
         rate = document.getElementById ('rate').value;
 // Calcultions
         interest = parseFloat((principle*years*rate)/100 ).toFixed(2);
-        amount = (principle*Math.pow((1 +rate/100),years )).toFixed(2);
+        compound = (principle*Math.pow((1 +rate/100),years )).toFixed(2);
 // Find current year and add input of years
         year = new Date().getFullYear()
         loanGradDate = parseInt(year) + parseInt(years);
