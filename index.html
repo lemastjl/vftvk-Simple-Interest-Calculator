@@ -3,38 +3,38 @@
 
 <html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Simple Intrest Calculator</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Simple Intrest Calculator</title>
     </head>
     <body>
-        <div class="maindiv">
+        <div class="mainDiv">
             <h1>Simple Interest Calculator</h1>
-            Amount <input type="number"  id="principal" required>  <br/>
-            <br>
-            Interest Rate <input type="range" id="rate" min="1" max="20" step=".25" value="10.25" onchange="rateUpdate(this.value)"><span id="displayRate">10.25</span><span></span>  <br/>
-            <br>
-            No. of Years <select name="years" id="years">
-                            <option value=1>1</option>
-                            <option value=2>2</option>
-                            <option value=3>3</option>
-                            <option value=4>4</option>
-                            <option value=5>5</option>
-                            <option value=6>6</option>
-                            <option value=7>7</option>
-                            <option value=8>8</option>
-                            <option value=9>9</option>
-                            <option value=10>10</option>
-                        </select>      
-            <span id="result"></span>
-            <br>
-            <br>
-            <button onclick="validateForm()">Compute Interest</button>
-            <footer>
-                <div>
+            <div class="inputDiv">
+                Amount <input type="number"  id="principal" required>  <br/>
                 <br>
-                    Copyright © 2021. All right reserved.
-                </div>
+                Interest Rate <input type="range" id="rate" min="1" max="20" step=".25" value="10.25" onchange="rateUpdate(this.value)"><span id="displayRate">10.25</span>%<span></span>  <br/>
+                <br>
+                No. of Years <select name="years" id="years">
+                    <option value=1>1</option>
+                    <option value=2>2</option>
+                    <option value=3>3</option>
+                    <option value=4>4</option>
+                    <option value=5>5</option>
+                    <option value=6>6</option>
+                    <option value=7>7</option>
+                    <option value=8>8</option>
+                    <option value=9>9</option>
+                    <option value=10>10</option>
+                </select>      
+                <span id="result"></span>
+                <br>
+                <br>
+                <button onclick="validateForm()">Compute Interest</button>
+            </div>
+            <footer>
+                <br>
+                Copyright © 2021. All right reserved.
             </footer>
         </div>
     </body>
